@@ -1,9 +1,6 @@
 # Path
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
-# PythonPath
-export PYTHONPATH="$PYTHONPATH:/Users/ally/Projects/bin"
-
 # Colours
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
