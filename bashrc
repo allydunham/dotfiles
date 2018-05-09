@@ -11,6 +11,10 @@ alias la='ls -al'
 export PS1="\u@\h: \w > "
 export PS2="+ "
 
+# Locale
+export LC_ALL=en_GB.utf-8
+export LANG=en_GB.utf-8
+
 # Homebrew
 export HOMEBREW_NO_ANALYTICS=1
 
