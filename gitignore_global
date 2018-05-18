@@ -65,3 +65,8 @@ Thumbs.db
 *.wav
 *.mp3
 *.wma
+
+# History Files #
+#################
+*.Rhistory
+.ipynb_checkpoints/*
