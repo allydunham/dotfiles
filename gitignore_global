@@ -68,5 +68,5 @@ Thumbs.db
 
 # History Files #
 #################
-*.Rhistory
-.ipynb_checkpoints/*
+.Rhistory
+**/.ipynb_checkpoints/*
