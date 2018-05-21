@@ -13,7 +13,7 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # Prompt
-export PS1='$(__git_ps1) \u@\h \w > '
+export PS1='\u@\h$(__git_ps1) \w > '
 export PS2="+ "
 
 # Locale
