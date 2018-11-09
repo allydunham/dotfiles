@@ -79,3 +79,7 @@ Thumbs.db
 #################
 .Rhistory
 **/.ipynb_checkpoints/*
+
+# Location Sepcific Configs #
+#############################
+*.code-workspace
