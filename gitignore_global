@@ -83,3 +83,4 @@ Thumbs.db
 # Location Sepcific Configs #
 #############################
 *.code-workspace
+**/.vscode/*
