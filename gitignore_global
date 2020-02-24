@@ -69,6 +69,7 @@ Thumbs.db
 # Office #
 ##########
 *.pptx
+*.potx
 *.xlsx
 *.docx
 *.doc
@@ -82,5 +83,7 @@ Thumbs.db
 
 # Location Sepcific Configs #
 #############################
+*.Rproj*
+.Rproj.user
 *.code-workspace
 **/.vscode/*
