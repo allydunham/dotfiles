@@ -90,5 +90,8 @@ case "$TERM" in xterm*|rxvt*)
     ;;
 esac
 
+# Editor
+export EDITOR=vim
+
 # Source aliases
 source bash_aliases
