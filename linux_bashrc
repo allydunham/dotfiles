@@ -79,7 +79,7 @@ if [ "$color_prompt" = yes ]; then
 fi
 unset color_prompt force_color_prompt
 
-PS1="${debian_chroot:+($debian_chroot)}${blue}\u${host}${white} ${green}\W${white}${purple}$(__git_ps1 " (%s)")${white} \$ "
+PS1='${debian_chroot:+($debian_chroot)}${blue}\u${host}${white} ${green}\W${white}${purple}$(__git_ps1 " (%s)")${white} \$ '
 PS2='+'
 
 #If this is an xterm set the title to user@host:dir
@@ -94,4 +94,4 @@ esac
 export EDITOR=vim
 
 # Source aliases
-source bash_aliases
+source ~/dotfiles/bash_aliases
