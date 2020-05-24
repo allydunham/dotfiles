@@ -63,23 +63,21 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-    if [ "$color_prompt" = yes ]; then
-        host="@\[\033[1;34m\]\h\[\033[00m\]"
-    else
-        host="@\h"
-    fi
-fi
-
 if [ "$color_prompt" = yes ]; then
     white="`tput setaf 7`"
-    blue="`tput setaf 4`"
-    green="`tput setaf 2`"
-    purple="`tput setaf 5`"
+    user_col="`tput setaf 4`"
+    dir_col="`tput setaf 2`"
+    git_col="`tput setaf 5`"
+
 fi
 unset color_prompt force_color_prompt
 
-PS1='${debian_chroot:+($debian_chroot)}${blue}\u${host}${white} ${green}\W${white}${purple}$(__git_ps1 " (%s)")${white} \$ '
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+    host="@\h"
+    git_col="`tput setaf 1`"
+fi
+
+PS1='${debian_chroot:+($debian_chroot)}${user_col}\u${host}${white} ${dir_col}\W${white}${git_col}$(__git_ps1 " (%s)")${white} \$ '
 PS2='+'
 
 #If this is an xterm set the title to user@host:dir
