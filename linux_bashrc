@@ -77,7 +77,7 @@ if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
     git_col="`tput setaf 1`"
 fi
 
-PS1='${debian_chroot:+($debian_chroot)}${user_col}\u${host}${white} ${dir_col}\W${white}${git_col}$(__git_ps1 " (%s)")${white} \$ '
+PS1='${debian_chroot:+($debian_chroot)}${user_col}\u${host}${white} ${dir_col}\w${white}${git_col}$(__git_ps1 " (%s)")${white} \$ '
 PS2='+'
 
 #If this is an xterm set the title to user@host:dir
