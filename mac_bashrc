@@ -1,11 +1,8 @@
+# bashrc file for OSX
 # Colours
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
-
-# Aliases
-alias ll='ls -l'
-alias la='ls -al'
 
 # Git
 source /usr/local/etc/bash_completion.d/git-completion.bash
@@ -26,5 +23,5 @@ export HOMEBREW_NO_ANALYTICS=1
 # Editor
 export EDITOR=vim
 
-# Python
-alias prp='pipenv run python'
+# Aliases
+source bash_aliases
