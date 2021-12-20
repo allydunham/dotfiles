@@ -24,4 +24,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export EDITOR=vim
 
 # Aliases
-source bash_aliases
+source ~/dotfiles/bash_aliases
+
+# No bash warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
